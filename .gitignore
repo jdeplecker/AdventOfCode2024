@@ -3,3 +3,4 @@
 /zig-out/
 AdventOfCode2024.iml
 cookie.txt
+/src/*/input.txt

@@ -9,7 +9,7 @@ This is an attempt to solve the [Advent of Code 2024](https://adventofcode.com/2
 
 | Day | Part 1 | Part 2 |
 |:---:| :---: |:------:|
-| 01  | - |   -    |
+| 01  | 🗲 |   🗲    |
 | 02  | - |   -    |
 | 03  | - |   -    |
 | 04  | - |   -    |
