@@ -12,7 +12,6 @@ pub fn main() !void {
     var right_nums = std.ArrayList(i32).init(allocator);
     defer right_nums.deinit();
 
-
     var lines = std.mem.tokenizeScalar(u8, input, '\n');
     while (lines.next()) |line| {
         var left_right = std.mem.splitSequence(u8, line, "   ");

@@ -1,4 +1,4 @@
-# CC-AdventOfCode-2024
+# AdventOfCode-2024
 
 This is an attempt to solve the [Advent of Code 2024](https://adventofcode.com/2024) with Zig.
 
@@ -10,7 +10,7 @@ This is an attempt to solve the [Advent of Code 2024](https://adventofcode.com/2
 | Day | Part 1 | Part 2 |
 |:---:| :---: |:------:|
 | 01  | 🗲 |   🗲    |
-| 02  | - |   -    |
+| 02  | 🗲 |   🗲    |
 | 03  | - |   -    |
 | 04  | - |   -    |
 | 05  | - |   -    |
