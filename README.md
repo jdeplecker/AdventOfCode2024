@@ -12,7 +12,7 @@ This is an attempt to solve the [Advent of Code 2024](https://adventofcode.com/2
 | 01  | 🗲 |   🗲    |
 | 02  | 🗲 |   🗲    |
 | 03  | 🗲 |   🗲    |
-| 04  | - |   -    |
+| 04  | 🗲 |   🗲    |
 | 05  | - |   -    |
 | 06  | - |   -    |
 | 07  | - |   -    |
