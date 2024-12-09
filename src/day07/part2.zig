@@ -1,6 +1,6 @@
 const std = @import("std");
 const print = std.debug.print;
-const input = @embedFile("input.txt");
+const input = @embedFile("test_input.txt");
 
 pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
@@ -9,9 +9,9 @@ pub fn main() !void {
 
     var lines_input = std.mem.splitSequence(u8, input, "\n");
     var result: usize = 0;
-    var line_index_count :usize= 0;
+    var line_index_count: usize = 0;
     while (lines_input.next()) |line| {
-        line_index_count+=1;
+        line_index_count += 1;
         if (line_index_count % 50 == 0) {
             print("{}\n", .{line_index_count});
         }
@@ -46,11 +46,10 @@ pub fn main() !void {
                 if (operator == '1') {
                     operator_result += values.items[value_index];
                 } else if (operator == '2') {
-                    const concat_result = try std.fmt.allocPrint(allocator, "{d}{d}", .{operator_result, values.items[value_index]});
+                    const concat_result = try std.fmt.allocPrint(allocator, "{d}{d}", .{ operator_result, values.items[value_index] });
                     defer allocator.free(concat_result);
                     operator_result = try std.fmt.parseInt(usize, concat_result, 10);
-                }
-                else {
+                } else {
                     operator_result = operator_result * values.items[value_index];
                 }
                 if (operator_result > expected_result) {
