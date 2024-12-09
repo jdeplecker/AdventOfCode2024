@@ -17,7 +17,7 @@ This is an attempt to solve the [Advent of Code 2024](https://adventofcode.com/2
 | 06  | 🗲 |   🗲    |
 | 07  | 🗲 |   🗲    |
 | 08  | 🗲 |   🗲    |
-| 09  | - |   -    |
+| 09  | 🗲 |   🗲    |
 | 10  | - |   -    |
 | 11  | - |   -    |
 | 12  | - |   -    |
