@@ -1,11 +1,15 @@
 const std = @import("std");
 const print = std.debug.print;
-const input = @embedFile("test_input.txt");
+const input = @embedFile("e_input.txt");
+
+const time = std.time;
+const Timer = time.Timer;
 
 pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
     defer _ = gpa.deinit();
     const allocator = gpa.allocator();
+    var timer = try Timer.start();
 
     const file_sizes = try allocator.alloc(usize, input.len / 2 + 1);
     defer allocator.free(file_sizes);
@@ -45,7 +49,7 @@ pub fn main() !void {
         } else {
             var white_left = white_spaces[fwd_white_ptr];
             var i = file_sizes.len;
-            while (i > 0) : (i -= 1) {
+            while (i > fwd_file_ptr) : (i -= 1) {
                 const bwd_file_ptr = i - 1;
                 if (file_sizes[bwd_file_ptr] <= white_left and !already_moved[bwd_file_ptr]) {
                     for (0..file_sizes[bwd_file_ptr]) |_| {
@@ -62,5 +66,9 @@ pub fn main() !void {
         }
     }
 
-    print("{}", .{check_sum});
+    print("{}\n", .{check_sum});
+    const elapsed: f64 = @floatFromInt(timer.read());
+    print("Time elapsed is: {d:.3}ms\n", .{
+        elapsed / time.ns_per_ms,
+    });
 }
