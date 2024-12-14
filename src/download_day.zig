@@ -2,7 +2,7 @@ const std = @import("std");
 const print = std.debug.print;
 
 pub fn main() !void {
-    const day: []const u8 = "11";
+    const day: []const u8 = "12";
 
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
     defer _ = gpa.deinit();
