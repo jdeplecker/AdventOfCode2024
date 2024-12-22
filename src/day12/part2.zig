@@ -1,6 +1,6 @@
 const std = @import("std");
 const print = std.debug.print;
-const input = @embedFile("input.txt");
+const input = @embedFile("test_input.txt");
 
 const Pos = struct { x: usize, y: usize };
 

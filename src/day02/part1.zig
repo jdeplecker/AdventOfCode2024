@@ -1,6 +1,6 @@
 const std = @import("std");
 const print = std.debug.print;
-const input = @embedFile("input.txt");
+const input = @embedFile("test_input.txt");
 
 pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
