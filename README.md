@@ -32,5 +32,5 @@ This is an attempt to solve the [Advent of Code 2024](https://adventofcode.com/2
 | 21  | 🗲 |   🗲    |
 | 22  | 🗲 |   🗲    |
 | 23  | 🗲 |   🗲    |
-| 24  | - |   -    |
+| 24  | 🗲 |   🗲    |
 | 25  | - |   -    |
